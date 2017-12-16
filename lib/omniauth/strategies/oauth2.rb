@@ -18,7 +18,7 @@ module OmniAuth
         OmniAuth::Strategy.included(subclass)
       end
 
-      args %i[client_id client_secret]
+      args [:client_id, :client_secret]
 
       option :client_id, nil
       option :client_secret, nil
